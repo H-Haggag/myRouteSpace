@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup/css/style.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <form id="signupFrom">
+        <div class="container mx-auto my-5 text-center">
+            
+            <div class="inputs m-auto w-75 p-5">
+                <h1 class="text-info mb-4">Sign up System</h1>
+                
+                <input class="form-control mb-4" type="text" id="userName" placeholder="Enter Your Name">
+                <input class="form-control mb-4" type="text" id="userEmail" placeholder="Enter Your Email">
+                <input class="form-control mb-4" type="password" id="userPassword" placeholder="Ex: Password123@">
+
+                <div class="alert alert-danger d-none" id="nameAlert">At Least Two charcters Name</div>
+                <div class="alert alert-danger d-none" id="emailAlert">Enter a Vaild Email</div>
+                <div class="alert alert-danger d-none" id="existAlert">Email is Already Exist</div>
+                <div class="alert alert-danger d-none" id="passwordAlert">At least 8 charcters <br> One Uppercase <br> one special charcter</div>
+                <div class="alert alert-primary d-none" id="doneAlert">All Good You Can Login Now</div>
+
+                <button class="btn btn-outline-info w-100">Sign Up</button>
+
+                <p class="text-dark m-3">Do you have an account?
+                    <a href="login/login.html" class="text-decoration-none text-danger">Sign in</a>
+                </p>
+            
+            </div>
+        </div>
+    </form>
+
+    <script src="signup/js/index.js"></script>
+    <script src="signup/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
